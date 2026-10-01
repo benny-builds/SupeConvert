@@ -1,0 +1,80 @@
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+!.env.template
+*.env
+
+# Binaries, Build Output & Executables
+/build/bin/
+/bin/
+/dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.app
+supeconvert
+supeconvert.exe
+
+# Go Artifacts & Coverage
+*.test
+*.out
+coverage.txt
+coverage.out
+/vendor/
+
+# Node Dependencies & Frontend Build Artifacts
+/frontend/node_modules/
+/frontend/dist/
+/frontend/dist-ssr/
+/frontend/build/
+.npm/
+.pnpm-store/
+.yarn/
+*.tsbuildinfo
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Wails Auto-Generated Bindings & Tools
+/frontend/wailsjs/go/
+/frontend/wailsjs/runtime/
+
+# Test & Temporary Directories
+/test_output/
+/tmp/
+/temp/
+*.tmp
+
+# IDEs, Code Editors & AI Tooling
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.swn
+.agents/
+.gemini/
+.claude/
+.cursor/
+.project
+.settings/
+.classpath
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
