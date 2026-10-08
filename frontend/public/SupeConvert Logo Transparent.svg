@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="105 90 300 330" role="img" aria-label="SupeConvert Logo">
+  <g transform="translate(256 257) scale(1.3) translate(-256 -257)">
+    <path d="M348 152 L176 222 L336 292 L164 362"
+          fill="none" stroke="#C5D465" stroke-width="40"
+          stroke-linejoin="round" stroke-linecap="round"/>
+
+    <g fill="#C5D465" stroke="#C5D465" stroke-width="6" stroke-linejoin="round">
+      <path d="M342 192 L272 226 L342 260 Z"/>
+      <path d="M170 322 L240 288 L170 254 Z"/>
+    </g>
+  </g>
+</svg>
