@@ -1,0 +1,20 @@
+{
+  "name": "CLI Test Preset",
+  "actions": [
+    {
+      "type": "Resize",
+      "params": {
+        "width": 300,
+        "height": 200,
+        "maintain_aspect": true
+      }
+    },
+    {
+      "type": "ConvertFormat",
+      "params": {
+        "target_format": "jpg",
+        "quality": 85
+      }
+    }
+  ]
+}
