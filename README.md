@@ -38,3 +38,46 @@ Offline, multi-threaded conversion for hundreds of image formats.
 SupeConvert is a lightweight desktop app for converting large batches of images. It runs entirely on your machine, with no cloud services and no network calls. It reads over 520 input formats and writes more than 75 output formats, which puts it in the same league as tools like XnConvert.
 
 ---
+
+## Features
+
+| Feature | Description |
+| :--- | :--- |
+| **Parallel processing** | A configurable worker pool (1 to 16 threads) keeps your CPU busy while converting. |
+| **Wide format support** | Reads web graphics, camera RAW, next-gen formats, vector files, game textures, HDR, and medical imaging. |
+| **Filename templates** | Build output names from a pattern and see a live preview as you type. |
+| **Re-processing prompt** | If output files already exist, choose to skip them or convert everything again. |
+| **Private by design** | Everything is processed locally, with no telemetry. |
+
+<details>
+<summary><b>Supported format highlights</b></summary>
+
+<br />
+
+| Category | Formats |
+| :--- | :--- |
+| Camera RAW | `CR2`, `NEF`, `ARW`, `DNG` |
+| Next-gen | `AVIF`, `HEIC`, `JXL` |
+| Vector | `SVG`, `PDF`, `EPS` |
+| Textures | `DDS`, `TGA`, `PCX`, `VTF` |
+| Medical | `DICOM` |
+| Other | Web graphics, HDR, and hundreds more |
+
+</details>
+
+<details>
+<summary><b>Filename template tokens</b></summary>
+
+<br />
+
+| Token | Meaning |
+| :--- | :--- |
+| `{name}` | Original file name |
+| `{w}` | Image width |
+| `{h}` | Image height |
+| `{index}` | Position in the batch |
+| `{ext}` | Output extension |
+
+</details>
+
+---
