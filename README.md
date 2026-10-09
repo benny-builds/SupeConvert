@@ -132,3 +132,27 @@ SupeConvert/
     â””â”€â”€ public/             # Branding assets and icons
 ```
 
+### Running in development mode
+
+This starts the app with hot reload for both the Go backend and the React frontend:
+
+```bash
+git clone https://github.com/user/SupeConvert.git
+cd SupeConvert
+wails dev
+```
+
+### Running tests
+
+```bash
+go test -v ./...
+```
+
+### Building for production
+
+| Goal | Command | Output |
+| :--- | :--- | :--- |
+| Portable executable | `wails build` | `build/bin/supeconvert.exe` |
+| Windows installer | `wails build -nsis` | `build/bin/SupeConvert-amd64-installer.exe` |
+
+---
