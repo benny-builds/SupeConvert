@@ -170,3 +170,21 @@ go test -v ./...
 | `supeconvert.exe` (single executable) | âŒ (ignored) | âœ… via Releases |
 
 ---
+
+## Contributing
+
+Contributions are welcome. To get started:
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/your-feature`.
+3. Make sure the tests pass: `go test -v ./...`.
+4. Commit your changes using [Conventional Commits](https://www.conventionalcommits.org/).
+5. Open a pull request.
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](https://github.com/user/SupeConvert/pulls)
+
+---
+
+## License
+
+Released under the MIT License. See [`LICENSE`](LICENSE) for details.
