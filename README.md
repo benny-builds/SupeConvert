@@ -81,3 +81,16 @@ SupeConvert is a lightweight desktop app for converting large batches of images.
 </details>
 
 ---
+
+## Installation
+
+> You don't need Go, Node.js, or any developer tools to use SupeConvert.
+
+### Windows installer
+
+[![Get Installer](https://img.shields.io/badge/Get-SupeConvert_Setup.exe-2ea44f?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/user/SupeConvert/releases)
+
+1. Download `SupeConvert Setup.exe` from the [Releases](https://github.com/user/SupeConvert/releases) page.
+2. Run it. SupeConvert is installed to `C:\Program Files\SupeConvert`, with Start Menu and Desktop shortcuts and an entry in Control Panel for uninstalling.
+
+---
