@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 <img src="frontend/public/SupeConvert Logo Transparent.svg" alt="SupeConvert Logo" width="120" />
 
@@ -10,8 +10,8 @@ Offline, multi-threaded conversion for hundreds of image formats.
 
 <br />
 
-[![Download](https://img.shields.io/badge/Download-Latest_Release-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/user/SupeConvert/releases)
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/user/SupeConvert/releases)
+[![Download](https://img.shields.io/badge/Download-Latest_Release-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/benny-builds/SupeConvert/releases)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
 [![License](https://img.shields.io/badge/License-MIT-F7B93E?style=for-the-badge)](LICENSE)
 
 ![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat-square&logo=go&logoColor=white)
@@ -22,11 +22,11 @@ Offline, multi-threaded conversion for hundreds of image formats.
 
 <br />
 
-[Overview](#overview) &nbsp;â€¢&nbsp;
-[Features](#features) &nbsp;â€¢&nbsp;
-[Installation](#installation) &nbsp;â€¢&nbsp;
-[Development](#development) &nbsp;â€¢&nbsp;
-[Contributing](#contributing) &nbsp;â€¢&nbsp;
+[Overview](#overview) &nbsp;&bull;&nbsp;
+[Features](#features) &nbsp;&bull;&nbsp;
+[Installation](#installation) &nbsp;&bull;&nbsp;
+[Development](#development) &nbsp;&bull;&nbsp;
+[Contributing](#contributing) &nbsp;&bull;&nbsp;
 [License](#license)
 
 </div>
@@ -88,9 +88,9 @@ SupeConvert is a lightweight desktop app for converting large batches of images.
 
 ### Windows installer
 
-[![Get Installer](https://img.shields.io/badge/Get-SupeConvert_Setup.exe-2ea44f?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/user/SupeConvert/releases)
+[![Get Installer](https://img.shields.io/badge/Get-SupeConvert_Setup.exe-2ea44f?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/benny-builds/SupeConvert/releases)
 
-1. Download `SupeConvert Setup.exe` from the [Releases](https://github.com/user/SupeConvert/releases) page.
+1. Download `SupeConvert Setup.exe` from the [Releases](https://github.com/benny-builds/SupeConvert/releases) page.
 2. Run it. SupeConvert is installed to `C:\Program Files\SupeConvert`, with Start Menu and Desktop shortcuts and an entry in Control Panel for uninstalling.
 
 ---
@@ -115,21 +115,21 @@ go install github.com/wailsapp/wails/v2/cmd/wails@latest
 
 ```text
 SupeConvert/
-â”œâ”€â”€ app.go                  # Wails bridge and native OS dialog handlers
-â”œâ”€â”€ main.go                 # Entry point and Wails startup configuration
-â”œâ”€â”€ wails.json              # Wails build settings
-â”œâ”€â”€ go.mod / go.sum         # Go dependencies
-â”œâ”€â”€ internal/               # Core Go backend packages
-â”‚   â”œâ”€â”€ engine/             # Batch processor, action pipeline, and MagickEngine sidecar
-â”‚   â”œâ”€â”€ fileutil/           # File discovery and the 520+ extension registry
-â”‚   â”œâ”€â”€ metadata/           # EXIF tag parser
-â”‚   â””â”€â”€ naming/             # Filename pattern formatter
-â””â”€â”€ frontend/               # React, TypeScript, and Tailwind CSS UI
-    â”œâ”€â”€ src/
-    â”‚   â”œâ”€â”€ components/     # UI components (OutputSettings, FileList, ProgressBar, etc.)
-    â”‚   â”œâ”€â”€ store/          # Zustand state management
-    â”‚   â””â”€â”€ services/       # Wails JS bindings and IPC bridge
-    â””â”€â”€ public/             # Branding assets and icons
+├── app.go                  # Wails bridge and native OS dialog handlers
+├── main.go                 # Entry point and Wails startup configuration
+├── wails.json              # Wails build settings
+├── go.mod / go.sum         # Go dependencies
+├── internal/               # Core Go backend packages
+│   ├── engine/             # Batch processor, action pipeline, and MagickEngine sidecar
+│   ├── fileutil/           # File discovery and the 520+ extension registry
+│   ├── metadata/           # EXIF tag parser
+│   └── naming/             # Filename pattern formatter
+└── frontend/               # React, TypeScript, and Tailwind CSS UI
+    ├── src/
+    │   ├── components/     # UI components (OutputSettings, FileList, ProgressBar, etc.)
+    │   ├── store/          # Zustand state management
+    │   └── services/       # Wails JS bindings and IPC bridge
+    └── public/             # Branding assets and icons
 ```
 
 ### Running in development mode
@@ -137,7 +137,7 @@ SupeConvert/
 This starts the app with hot reload for both the Go backend and the React frontend:
 
 ```bash
-git clone https://github.com/user/SupeConvert.git
+git clone https://github.com/benny-builds/SupeConvert.git
 cd SupeConvert
 wails dev
 ```
@@ -164,10 +164,10 @@ go test -v ./...
 
 | Item | In the repository? | Given to end users? |
 | :--- | :---: | :---: |
-| Go source code and React UI | âœ… | âŒ |
-| `wails.json` and config files | âœ… | âŒ |
-| `.gitignore` and tests | âœ… | âŒ |
-| `supeconvert.exe` (single executable) | âŒ (ignored) | âœ… via Releases |
+| Go source code and React UI | ✅ | ❌ |
+| `wails.json` and config files | ✅ | ❌ |
+| `.gitignore` and tests | ✅ | ❌ |
+| `supeconvert.exe` (single executable) | ❌ (ignored) | ✅ via Releases |
 
 ---
 
@@ -181,7 +181,7 @@ Contributions are welcome. To get started:
 4. Commit your changes using [Conventional Commits](https://www.conventionalcommits.org/).
 5. Open a pull request.
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](https://github.com/user/SupeConvert/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](https://github.com/benny-builds/SupeConvert/pulls)
 
 ---
 
