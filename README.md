@@ -94,3 +94,41 @@ SupeConvert is a lightweight desktop app for converting large batches of images.
 2. Run it. SupeConvert is installed to `C:\Program Files\SupeConvert`, with Start Menu and Desktop shortcuts and an entry in Control Panel for uninstalling.
 
 ---
+
+## Development
+
+### Prerequisites
+
+| Tool | Version |
+| :--- | :--- |
+| Go | 1.22 or newer |
+| Node.js | 18 or newer, with `npm` |
+| Wails CLI | v2 |
+
+Install the Wails CLI with:
+
+```bash
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
+```
+
+### Project structure
+
+```text
+SupeConvert/
+â”œâ”€â”€ app.go                  # Wails bridge and native OS dialog handlers
+â”œâ”€â”€ main.go                 # Entry point and Wails startup configuration
+â”œâ”€â”€ wails.json              # Wails build settings
+â”œâ”€â”€ go.mod / go.sum         # Go dependencies
+â”œâ”€â”€ internal/               # Core Go backend packages
+â”‚   â”œâ”€â”€ engine/             # Batch processor, action pipeline, and MagickEngine sidecar
+â”‚   â”œâ”€â”€ fileutil/           # File discovery and the 520+ extension registry
+â”‚   â”œâ”€â”€ metadata/           # EXIF tag parser
+â”‚   â””â”€â”€ naming/             # Filename pattern formatter
+â””â”€â”€ frontend/               # React, TypeScript, and Tailwind CSS UI
+    â”œâ”€â”€ src/
+    â”‚   â”œâ”€â”€ components/     # UI components (OutputSettings, FileList, ProgressBar, etc.)
+    â”‚   â”œâ”€â”€ store/          # Zustand state management
+    â”‚   â””â”€â”€ services/       # Wails JS bindings and IPC bridge
+    â””â”€â”€ public/             # Branding assets and icons
+```
+
