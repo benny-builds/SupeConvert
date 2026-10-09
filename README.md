@@ -156,3 +156,17 @@ go test -v ./...
 | Windows installer | `wails build -nsis` | `build/bin/SupeConvert-amd64-installer.exe` |
 
 ---
+
+## Repository vs. Releases
+
+> [!IMPORTANT]
+> Source code goes in the repository. Compiled binaries go in GitHub Releases.
+
+| Item | In the repository? | Given to end users? |
+| :--- | :---: | :---: |
+| Go source code and React UI | âœ… | âŒ |
+| `wails.json` and config files | âœ… | âŒ |
+| `.gitignore` and tests | âœ… | âŒ |
+| `supeconvert.exe` (single executable) | âŒ (ignored) | âœ… via Releases |
+
+---
