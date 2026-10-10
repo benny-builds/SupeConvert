@@ -63,9 +63,6 @@ export const App: React.FC = () => {
           <span className="text-xs font-semibold tracking-tight text-foreground">
             SupeConvert
           </span>
-          <span className="px-1.5 py-0.5 rounded-md bg-muted/80 text-[10px] font-mono text-muted-foreground border border-border/70">
-            v1.0
-          </span>
         </div>
 
         {/* Right: Actions, Theme Switcher & Window Controls */}
