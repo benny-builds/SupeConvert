@@ -117,19 +117,23 @@ go install github.com/wailsapp/wails/v2/cmd/wails@latest
 SupeConvert/
 ├── app.go                  # Wails bridge and native OS dialog handlers
 ├── main.go                 # Entry point and Wails startup configuration
-├── wails.json              # Wails build settings
-├── go.mod / go.sum         # Go dependencies
+├── wails.json              # Wails build and packaging settings
+├── go.mod / go.sum         # Go module dependencies
+├── build/                  # Platform icons and NSIS installer configuration
+├── presets/                # Reusable JSON pipeline presets
 ├── internal/               # Core Go backend packages
-│   ├── engine/             # Batch processor, action pipeline, and MagickEngine sidecar
-│   ├── fileutil/           # File discovery and the 520+ extension registry
-│   ├── metadata/           # EXIF tag parser
-│   └── naming/             # Filename pattern formatter
+│   ├── engine/             # Batch processor, pipeline runner, and MagickEngine
+│   │   └── actions/        # Transformation steps (resize, crop, watermark, etc.)
+│   ├── fileutil/           # Recursive file scanner and 520+ format registry
+│   ├── metadata/           # EXIF metadata parser
+│   └── naming/             # Template pattern formatter ({name}, {w}, {index})
 └── frontend/               # React, TypeScript, and Tailwind CSS UI
     ├── src/
-    │   ├── components/     # UI components (OutputSettings, FileList, ProgressBar, etc.)
-    │   ├── store/          # Zustand state management
-    │   └── services/       # Wails JS bindings and IPC bridge
-    └── public/             # Branding assets and icons
+    │   ├── components/     # UI components (OutputSettings, FileList, ActionCard, etc.)
+    │   ├── store/          # Zustand global state management
+    │   ├── services/       # Wails JS bindings and IPC bridge
+    │   └── assets/         # UI imagery and SVG icons
+    └── public/             # Branding assets and logos
 ```
 
 ### Running in development mode
